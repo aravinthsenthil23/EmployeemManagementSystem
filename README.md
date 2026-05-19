@@ -41,3 +41,14 @@ The application follows a standard decoupled Client-Server architecture:
                                                               |
                                                        [ MySQL Database ]# Employee Management System 🏢
 ```
+## ⚙️ Getting Started
+# Prerequisites
+** Ensure you have the following installed on your local machine:
+
+* Node.js (v16 or higher)
+
+* Java Development Kit (JDK 17 or higher)
+
+* Maven
+
+* MySQL Server
