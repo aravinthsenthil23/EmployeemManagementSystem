@@ -43,7 +43,7 @@ The application follows a standard decoupled Client-Server architecture:
 ```
 ## ⚙️ Getting Started
 # Prerequisites
-** Ensure you have the following installed on your local machine:
+### Ensure you have the following installed on your local machine:
 
 * Node.js (v16 or higher)
 
@@ -52,3 +52,41 @@ The application follows a standard decoupled Client-Server architecture:
 * Maven
 
 * MySQL Server
+
+## Backend Setup (Spring Boot)
+# Clone the repository and navigate to the backend directory:
+
+```Bash
+cd employee-management-backend
+Configure the MySQL database connection in src/main/resources/application.properties:
+```
+```Properties
+spring.datasource.url=jdbc:mysql://localhost:3306/employee_db?useSSL=false&serverTimezone=UTC
+spring.datasource.username=your_mysql_username
+spring.datasource.password=your_mysql_password
+# Hibernate properties
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+spring.jpa.hibernate.ddl-auto=update
+```
+# Run the Spring Boot application using Maven:
+
+```Bash
+mvn spring-boot:run
+The server will start on port 8080 by default (http://localhost:8080).
+```
+## Frontend Setup (React)
+# Navigate to the frontend directory:
+
+```Bash
+cd employee-management-frontend
+```
+# Install the necessary dependencies (including Axios):
+```Bash
+npm install
+```
+# Start the React development server:
+
+```Bash
+npm start
+```
+The client application will launch in your browser at http://localhost:3000
